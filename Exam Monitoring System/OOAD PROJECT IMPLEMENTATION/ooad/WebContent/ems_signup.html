@@ -1,0 +1,107 @@
+<html>
+<head>
+<title> EMS | GRE | Signup </title>
+<link rel="stylesheet" type="text/css" href="ems_signupcss.css"></link>
+<script src="ems_signupjs.js">
+</script>
+</head>
+<body>
+<div class="header">
+<img src="gre2.jpg" alt="Graduate Record Examination" width="100%" height="100%"></img>
+</div>
+<div class="section1">
+<div class="innersection2">
+
+<form name="signup" method="post" action="ems_success.jsp" autocomplete="off">
+<span id="required" > * </span>
+<label>First name: </label>
+<span id="move" ><input class="textbox" type="text" id="first_name" name="f_name" placeholder="First name" required /> </span><br /><br />
+<span class="error"id="error1"></span>
+<br />
+
+<span id="required" > * </span>
+<label>Last name: </label>
+<span id="move" ><input class="textbox" type="text" id="last_name" name="l_name" placeholder="Last name" required /> </span><br /><br />
+<span class="error"id="error2"></span>
+<br />
+
+<span id="required" > * </span>
+<label>Date of birth: </label>
+<span id="move" ><input type="text" name="dob" />&nbsp;&nbsp;YYYY/MM/DD</span><br /><br />
+<span class="error"id="error3"></span>
+<br />
+
+<span id="required" > * </span>
+<label>Gender: </label>
+<span id="move"><select name="gender">
+		<option value="male" selected="selected">Male</option>
+		<option value="female">Female</option>
+					</select></span><br /><br />
+<span class="error"id="error4"></span>
+<br />
+
+<span id="required" > * </span>
+<label>Email Address:</label>
+<span id="move" ><input class="textbox" type="email" id="email1" name="email" placeholder="someone@somewhere.com" required /></span><br /><br />
+<span class="error"id="error5"></span>
+<br />
+
+<span id="required" > * </span>
+<label>Re-enter Email address:</label>
+<span id="move" ><input class="textbox" type="email" id="email2" name="email2" placeholder="someone@somewhere.com" required /></span><br /><br />
+<span class="error" id="error6"></span>
+<br />
+
+
+<span id="required" > * </span>
+<label>Address Line 1:</label>
+<span id="move" ><textarea class="textbox" name="address" placeholder="Address" required /></textarea></span><br /><br />
+<span class="error" id="error7"> </span>
+<br />
+
+<span id="required" > * </span>
+<label>City:</label>
+<span id="move" ><input class="textbox" type="text" name="city" placeholder="City name" required /></span><br /><br />
+<span class="error" id="error9"> </span>
+<br />
+
+<label>Zip/Postal code: </label>
+<span id="move" ><input class="textbox" type="text" name="zip" /></span><br /><br />
+<span class="error" id="error10"> </span>
+<br />
+
+<span id="required" > * </span>
+<label>Country/Location: </label>
+<span id="move" ><select name="country">  <option value="select">Select</option>
+									<option value="Usa">United States of America </option>
+									<option value="India">India</option>
+									<option value="China">China</option>
+									</select></span><br /><br />
+<span class="error" id="error11"></span><br />
+
+<span id="required" > * </span>
+<label>Phone number: </label>
+<span id="move" ><input class="textbox" id="mobile" type="text" name="mobile" required /></span><br /><br />
+<span id="error12" class="error"></span>
+<br />
+  
+<span id="required" > * </span>
+<label>User name: </label>
+<span id="move" ><input class="textbox" id="uname" type="text" name="uname" required /></span><br /><br />
+<span id="error13" class="error"></span>
+<br />
+
+<span id="required" > * </span>
+<label>Password: </label>
+<span id="move" ><input class="textbox" id="pwd" type="password" name="pwd" required /></span><br /><br />
+<span id="error14" class="error"></span>
+<br />
+
+<span id="cancelbtn" ><input type="button" name="cancel" value="Cancel"  /></button></span>
+<span id="submitbtn"><input type="submit" name="Submit" value="Submit" onclick="return validator()" /></span>
+<span id="rst"><input type="reset" name="reset" value="Reset" /> </span>
+</form> 
+</div>
+</div>
+</body>
+</html>
